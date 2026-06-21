@@ -157,3 +157,77 @@ body {
   cursor: pointer;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
+
+Analisando o print do desktop (Captura de tela 2026-06-21 143026.png) e o estrago no mobile (Screenshot_20260621_143036_Chrome.jpg), o problema principal é que a sua .direita (o formulário de login e o logo) sumiu completamente da tela no celular!
+
+Isso acontece porque o .conteudo-principal está travado em grid-template-columns: 1fr 1fr e o container não quebra as colunas em linhas. Além disso, o tamanho do fone de ouvido (380px) explode o limite do container do celular.
+
+Para corrigir isso, fazer as seções empilharem perfeitamente e trazer o formulário de login de volta no mobile, adicione esta @media query no final do seu arquivo stylog.css:
+
+CSS
+@media screen and (max-width: 768px) {
+  body {
+    align-items: flex-start; 
+  }
+
+  .container {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .cabecalho {
+    padding-right: 10px;
+    text-align: center; 
+    margin-bottom: 30px;
+  }
+
+ 
+  .conteudo-principal {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+ 
+  .hero {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .fone {
+    width: 280px; 
+  }
+
+  .tituloini {
+    font-size: 32px; 
+    padding: 0 10px;
+  }
+
+  .bemvindo {
+    font-size: 28px;
+  }
+
+  .legenda {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+ 
+  .direita {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .formulario {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .campo {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
