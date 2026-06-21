@@ -116,3 +116,61 @@ body {
   background-color: #f1e6ff;
   font-weight: bold;
 }
+
+@media screen and (max-width: 900px) {
+  .conteudo {
+   
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "apresentacao"
+      "cadastro";
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  .apresentacao {
+    min-height: auto; 
+    margin-bottom: 20px;
+  }
+
+  .fone {
+   
+    position: relative; 
+    z-index: 1;
+    width: 60%;
+    max-width: 250px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
+
+  .apresentacaotitulo {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  .apresentacaotexto {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .cadastro {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .cadastrotitulo {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffffff; 
+  }
+
+  .formulario__campo,
+  .formulario__botao {
+    height: 48px;
+    font-size: 16px;
+  }
+}
