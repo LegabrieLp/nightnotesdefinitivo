@@ -231,3 +231,108 @@ h2 {
     border: 3px solid #4a0e4e;
     box-shadow: 0 4px 12px rgba(0,0,0,0.28);
 }
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto; 
+    }
+
+ 
+    .container-principal {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+  
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        padding: 24px;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-area img {
+        width: 90px;
+        height: 90px; 
+    }
+
+  
+    .menu {
+        width: 100%;
+        max-width: 320px; 
+        align-items: center;
+    }
+
+    .menu-item {
+        padding: 4px 0;
+    }
+
+   
+    .frase-playlist-box {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .sidebar-footer {
+        padding-top: 5px;
+    }
+
+  
+    .conteudo-principal {
+        padding: 24px 20px;
+    }
+
+  
+    .topo-busca {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .pesquisa-de-conteudos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-busca {
+        max-width: 100%; 
+    }
+
+    .botoes-principais {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .formulario_botao {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        text-align: center; 
+        font-size: 1.25rem;
+        margin-bottom: 18px;
+    }
+
+   
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .card-musica h3, .card-artista h3 {
+        font-size: 0.9rem;
+    }
+
+    .grid-artistas {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+}
