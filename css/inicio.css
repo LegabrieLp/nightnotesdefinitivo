@@ -244,9 +244,9 @@ h2 {
     }
 
   
-    .sidebar {
+ .sidebar {
         width: 100%;
-        min-width: 100%;
+        min-width: none !important; 
         height: auto;
         padding: 24px;
         gap: 20px;
