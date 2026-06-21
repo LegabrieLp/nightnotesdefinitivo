@@ -273,20 +273,56 @@ body {
     padding: 0 15px;
   }
 
+  
   .hero {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     text-align: center;
+    padding: 35px 20px;
   }
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
+
+  
+  .recomendacao-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subtitulo-semana {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .capas-carrossel {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+
+ 
+  .capas-carrossel img {
+    width: 55px;
+    height: 75px;
+    flex-shrink: 0; 
+  }
+
+  .carousel-arrow {
+    font-size: 24px;
+    padding: 0 5px;
+  }
+
 
   .content {
     flex-direction: column;
     padding: 20px;
-    gap: 30px;
+    gap: 40px;
   }
 
   .left-side,
@@ -294,27 +330,26 @@ body {
     width: 100%;
   }
 
+  .section h2 {
+    text-align: center; 
+    margin-bottom: 16px;
+  }
+
+  
   .cards {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px; 
   }
 
-  .recomendacao-container {
-    flex-direction: column;
+ 
+  .card {
+    width: 100px;
+    height: 100px;
   }
 
-  .capas-carrossel {
-    flex-wrap: wrap;
-    justify-content: center;
+  
+  .rank-detalhes {
+    font-size: 14px;
   }
-
-  .capas-carrossel img {
-    width: 60px;
-    height: 85px;
-  }
-
-  .subtitulo-semana {
-    text-align: center;
-  }
-
 }
