@@ -266,3 +266,55 @@ body {
 .ranking-chevron:hover {
   background: rgba(255, 255, 255, 0.03);
 }
+
+@media (max-width: 768px) {
+
+  .topbar {
+    padding: 0 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .left-side,
+  .sidebar {
+    width: 100%;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recomendacao-container {
+    flex-direction: column;
+  }
+
+  .capas-carrossel {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .capas-carrossel img {
+    width: 60px;
+    height: 85px;
+  }
+
+  .subtitulo-semana {
+    text-align: center;
+  }
+
+}
