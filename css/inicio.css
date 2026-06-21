@@ -232,20 +232,18 @@ h2 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.28);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
-        overflow-y: auto !important; 
+        overflow-y: auto !important;
     }
-
     .container-principal {
+        display: flex !important;
         flex-direction: column !important;
         min-height: 100vh !important;
-        display: flex !important;
     }
-
     .sidebar {
         width: 100% !important;
-        min-width: 0 !important; 
+        min-width: 0 !important;
         max-width: 100% !important;
         height: auto !important;
         padding: 24px !important;
@@ -255,33 +253,28 @@ h2 {
         align-items: center !important;
         text-align: center !important;
     }
-
     .logo-area img {
         width: 90px !important;
-        height: 90px !important; 
+        height: 90px !important;
     }
-
     .menu {
         width: 100% !important;
-        max-width: 320px !important; 
+        max-width: 320px !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         gap: 14px !important;
     }
-
     .menu-item {
         padding: 4px 0 !important;
         width: 100% !important;
         text-align: center !important;
     }
-
     .menu-link {
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
     }
-
     .frase-playlist-box {
         margin-top: 10px !important;
         width: 100% !important;
@@ -290,63 +283,52 @@ h2 {
         flex-direction: column !important;
         align-items: center !important;
     }
-
     .sidebar-footer {
         padding-top: 5px !important;
         width: 100% !important;
         text-align: center !important;
     }
-
     .conteudo-principal {
         padding: 24px 20px !important;
         width: 100% !important;
     }
-
     .topo-busca {
         flex-direction: column !important;
         gap: 16px !important;
         margin-bottom: 32px !important;
         width: 100% !important;
     }
-
     .pesquisa-de-conteudos {
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
     }
-
     .input-busca {
-        max-width: 100% !important; 
+        max-width: 100% !important;
     }
-
     .botoes-principais {
         width: 100% !important;
         justify-content: center !important;
-        flex-wrap: wrap !important; 
+        flex-wrap: wrap !important;
     }
-
     .formulario_botao {
         padding: 8px 14px !important;
         font-size: 0.9rem !important;
     }
-
     h2 {
-        text-align: center !important; 
+        text-align: center !important;
         font-size: 1.25rem !important;
         margin-bottom: 18px !important;
     }
-
     .grid-cards {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 16px !important;
     }
-
     .card-musica h3, .card-artista h3 {
         font-size: 0.9rem !important;
     }
-
     .grid-artistas {
-        grid-template-columns: repeat(2, 1fr) !important; 
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 20px !important;
     }
 }
